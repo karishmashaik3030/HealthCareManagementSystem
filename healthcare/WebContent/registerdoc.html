@@ -1,0 +1,81 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>User Login</title>
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href="ownstyle.css" rel="stylesheet" type="text/css"/>
+
+<script type="text/javascript">
+
+function validate()
+{
+	//alert("hello");
+	var a=document.getElementById("field1").value;
+	
+}
+
+</script>
+</head>
+<body bgcolor="#33ffff">
+<div id="main">
+<div id="header">
+
+<div><img src="images/logo.png"/></div>
+	<div id="buttons">
+	
+      <a href="index.html" class="but selectd"  title="">Home</a>
+      <a href="index1.html" class="but"  title="">Admin-Login</a>
+      <a href="about.html" class="but"  title="">Doctor-Login</a>
+      <a href="user.html" class="but"  title="">User-Login</a>
+      <a href="contact.html" class="but"  title="">Contact Us</a>
+      
+      
+    
+	
+   
+</div>
+</div>
+
+
+
+<br>
+<br>
+<div align="center" style="width: 15cm;">
+<br><br>
+<br><br>
+<h2>Doctor Register</h2>
+
+<div class="form-style-3">
+<form action="registerdoc" method="get">
+<fieldset><legend>DOCTOR REGISTRATION</legend>
+<label for="field1"><span>Doctor Name<span class="required">*</span></span><input type="text" class="input-field" id="field1" name="field1" value="" required/></label>
+<label for="field2"><span>Password<span class="required">*</span></span><input type="text" class="input-field" id="field2" name="field2" value="" required/></label>
+<label for="field3"><span>Doctor ID<span class="required">*</span></span><input type="text" class="input-field" id="field3"name="field3" value="" required/></label>
+<label for="field4"><span>Specialist<span class="required">*</span></span>
+<select id="field4" name="field4">
+  <option value="General CheckUp">General CheckUp</option>
+  <option value="Heart">Heart</option>
+  <option value="ENT(Ear, Nose & Throat)">ENT(Ear, Nose & Throat)</option>
+  <option value="Eye">Eye</option>
+  <option value="Cancer">Cancer</option>
+  <option value="Asthma">Asthma</option>
+  <option value="Hair Care">Hair Care</option>
+  <option value="Child Care">Child Care</option>
+</select></label>
+<label for="field5"><span>Mobile No<span class="required">*</span></span><input type="text" class="input-field" id="field5" name="field5" value="" required/></label>
+<label for="field6"><span>Address<span class="required">*</span></span><input type="text" class="input-field" id="field6" name="field6" value="" required/></label>
+<label><span>&nbsp;</span><input type="submit" value="Submit" onclick="return validate()"/></label>
+
+
+</fieldset>
+
+</form>
+</div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Health Care</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <display-name>AdminLogin</display-name>
+    <servlet-name>AdminLogin</servlet-name>
+    <servlet-class>com.healthcare.org.AdminLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AdminLogin</servlet-name>
+    <url-pattern>/AdminLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <display-name>UserLogin</display-name>
+    <servlet-name>UserLogin</servlet-name>
+    <servlet-class>com.healthcare.org.UserLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserLogin</servlet-name>
+    <url-pattern>/UserLogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.healthcare.org.UserRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RegisterDoc</servlet-name>
+    <servlet-class>com.healthcare.org.DoctorRegister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterDoc</servlet-name>
+    <url-pattern>/registerdoc</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DoctorLogin</servlet-name>
+    <servlet-class>com.healthcare.org.DoctorLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorLogin</servlet-name>
+    <url-pattern>/DoctorLogin</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AppReq</servlet-name>
+    <servlet-class>com.healthcare.org.Request</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AppReq</servlet-name>
+    <url-pattern>/request</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>Priscrip</servlet-name>
+    <servlet-class>com.healthcare.org.Priscrip</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Priscrip</servlet-name>
+    <url-pattern>/priscrip</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
